@@ -13,21 +13,21 @@ A nudge can communicate an action, reminder, or benefit to a customer based on t
 A Nudge brings together **Eligibility, What to Send, How to Send, and When to Send** to define the customer communication.
 </Info>
 
----
-
 ## How a Nudge is Defined
+
+A nudge is configured around four key components that determine **who receives the communication, what is communicated, how it reaches the customer, and when it is triggered**.
 
 ### 1. Eligibility
 
 **Eligibility** defines the customers to whom the nudge applies.
 
-Customer parameters and configured criteria determine which customers are considered for the nudge.
+Customer parameters and configured criteria determine which customers are considered for the nudge. For example, a System Nudge can use customer parameters such as **card details, card status, and date of birth**.
 
 ### 2. What to Send
 
 **What to Send** defines the communication presented or delivered to the customer.
 
-The communication uses a configured **template**.
+The communication uses a configured **template** that contains the message to be communicated.
 
 **Example:**
 
@@ -37,7 +37,7 @@ The communication uses a configured **template**.
 
 **How to Send** defines the channel through which the nudge reaches the customer.
 
-Nudges can be delivered through:
+Nudges can be delivered through the following channels:
 
 - **PWA** — Presents the nudge as an in-app experience, such as a banner.
 - **SMS** — Delivers the configured communication as a text message.
@@ -55,38 +55,34 @@ The configured trigger determines when the communication is sent.
 For example, a nudge can be configured to be sent at **5:00 PM on October 20, 2026**.
 </Tip>
 
----
-
 ## Nudge Types
 
 Nudges are available in different types, based on how the nudge is triggered or configured.
 
 <CardGroup cols={2}>
+  <Card title="System Nudge" icon="gear">
+    Uses system-based triggers and customer parameters such as **card details, card status, and date of birth**.
+  </Card>
 
-<Card title="System Nudge" icon="gear">
-Uses system-based triggers and customer parameters such as **card details, card status, and date of birth**.
-</Card>
+  <Card title="File Upload" icon="file-arrow-up">
+    Uses a **`.csv` file upload** to trigger nudges.
+  </Card>
 
-<Card title="File Upload" icon="file-arrow-up">
-Uses a **`.csv` file upload** to trigger nudges.
-</Card>
+  <Card title="Journey Nudge" icon="route">
+    Sends a nudge through **SMS, WhatsApp, or Email** with a link that directs the customer to a **landing page**, where information from the previous journey step is retained and the customer can proceed to the **next step**.
+  </Card>
 
-<Card title="Journey Nudge" icon="route">
-Sends a nudge through **SMS, WhatsApp, or Email** with a link that directs the customer to a **landing page**, where information from the previous journey step is retained and the customer can proceed to the **next step**.
-</Card>
+  <Card title="Promotional Nudge" icon="tag">
+    Uses **datapoints across offers** to trigger a nudge.
+  </Card>
 
-<Card title="Promotional Nudge" icon="tag">
-Uses **datapoints across offers** to trigger a nudge.
-</Card>
+  <Card title="Cross Sell / Up Sell" icon="arrow-up-right">
+    Uses **EMI-related attributes** to create a nudge.
+  </Card>
 
-<Card title="Cross Sell / Up Sell" icon="arrow-up-right">
-Uses **EMI-related attributes** to create a nudge.
-</Card>
-
-<Card title="Other" icon="gift">
-Delivers value through **gift vouchers**.
-</Card>
-
+  <Card title="Other" icon="gift">
+    Delivers value through **gift vouchers**.
+  </Card>
 </CardGroup>
 
 <Note>
