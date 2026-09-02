@@ -1,1 +1,168 @@
+---
+title: Nudges
+description: Configure and deliver targeted customer communications to encourage customers to take the next action toward a defined goal.
+---
 
+# Nudges
+
+## Overview
+
+**Nudges** are customer communications designed to encourage customers to take the **next action toward a defined goal**.
+
+A nudge can be presented within the **PWA** as an in-app experience, such as a banner, or delivered through external communication channels such as **SMS, WhatsApp, RCS, and Email**.
+
+<Info>
+A nudge brings together **eligibility, communication content, delivery channel, and trigger** to configure the customer communication.
+</Info>
+
+---
+
+## How Nudges Work
+
+A nudge is configured around four core components:
+
+| **Component** | **Description** |
+|---|---|
+| **Eligibility** | Defines the customers to whom the nudge applies. |
+| **What to Send** | Defines the communication content using a configured template. |
+| **How to Send** | Defines the channel through which the nudge is delivered. |
+| **When to Send** | Defines when the nudge is triggered or sent. |
+
+For example, a nudge may communicate:
+
+> **"Hi, complete the goal to unlock your reward."**
+
+The configured **eligibility** identifies the applicable customers, **What to Send** defines the communication, **How to Send** defines the delivery channel, and **When to Send** defines when the communication is triggered.
+
+---
+
+## Nudge Types
+
+The Hyperface Dashboard provides multiple nudge types:
+
+| **Nudge Type** | **Description** |
+|---|---|
+| **System Nudge** | Uses system-based triggers and customer parameters to send a nudge. |
+| **File Upload** | Uses a `.csv` file upload to trigger nudges. |
+| **Journey Nudge** | Uses touchpoints within a journey to send a nudge. |
+| **Promotional Nudge** | Uses datapoints across offers to trigger a nudge. |
+| **Cross Sell / Up Sell** | Uses EMI-related attributes to create a nudge. |
+| **Other** | Delivers value with gift vouchers. |
+
+---
+
+## System Nudge
+
+A **System Nudge** uses **system-based triggers** and available customer parameters to send a nudge.
+
+Examples of customer parameters include:
+
+- **Card details**
+- **Card status**
+- **Date of birth (DOB)**
+
+<Note>
+The available customer parameters depend on the configuration supported by the System Nudge.
+</Note>
+
+---
+
+## File Upload
+
+**File Upload** allows a `.csv` file to be uploaded to trigger nudges.
+
+---
+
+## Journey Nudge
+
+A **Journey Nudge** uses a touchpoint within a customer journey to communicate with the customer.
+
+The customer can receive a link through **SMS, WhatsApp, or Email**. When the customer clicks the link, they are directed to a **landing page** that carries information from the previous journey step and allows them to proceed to the **next step**.
+
+<Info>
+A Journey Nudge connects the customer communication with the journey, allowing the customer to continue from the previous step to the next step through the landing page.
+</Info>
+
+### Journey Nudge Flow
+
+The customer receives a **nudge through SMS, WhatsApp, or Email**, clicks the link, and is directed to a **landing page** that carries information from the previous journey step and allows them to proceed to the **next step**.
+
+---
+
+## Promotional Nudge
+
+A **Promotional Nudge** uses **datapoints across offers** to trigger a nudge.
+
+---
+
+## Cross Sell / Up Sell
+
+**Cross Sell / Up Sell** uses **EMI-related attributes** to create a nudge.
+
+---
+
+## Other
+
+**Other** is used to **deliver value with gift vouchers**.
+
+---
+
+## Nudge Delivery
+
+Nudges can be delivered through different customer touchpoints:
+
+| **Delivery Channel** | **Customer Experience** |
+|---|---|
+| **PWA** | The nudge can be presented as an in-app banner that directs the customer to the next page. |
+| **SMS** | The configured nudge is delivered through SMS. |
+| **WhatsApp** | The configured nudge is delivered through WhatsApp. |
+| **RCS** | The configured nudge is delivered through RCS. |
+| **Email** | The configured nudge is delivered through Email. |
+
+---
+
+## When to Send
+
+**When to Send** defines when the nudge is triggered or sent.
+
+A trigger can be configured for a specific date and time.
+
+For example:
+
+> **Send the nudge at 5:00 PM on October 20, 2026.**
+
+The configured trigger determines when the nudge communication is sent.
+
+---
+
+## Example
+
+Consider a customer who needs to complete an action toward a defined goal.
+
+The nudge can be configured as follows:
+
+| **Configuration** | **Example** |
+|---|---|
+| **Eligibility** | Customer satisfying the configured eligibility criteria |
+| **What to Send** | "Hi, complete the goal to unlock your reward." |
+| **How to Send** | SMS |
+| **When to Send** | 5:00 PM on October 20, 2026 |
+
+The customer receives the configured communication through the selected channel at the configured trigger time.
+
+---
+
+## Nudge Configuration at a Glance
+
+```text
+Eligibility
+     ↓
+What to Send
+     ↓
+How to Send
+     ↓
+When to Send
+     ↓
+Customer receives the Nudge
+     ↓
+Customer takes the Next Action
