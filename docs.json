@@ -6,14 +6,19 @@
     "primary": "#0D9373"
   },
   "navigation": {
-    "pages": [
-      "introduction",
+    "groups": [
       {
-        "group": "System Nudge",
+        "group": "Nudge Management",
         "pages": [
-          "system-nudge/nudge-type",
-          "system-nudge/nudge-scope",
-          "system-nudge/tracking-context",
+          "system-nudge/introduction",
+          {
+            "group": "Basic Details",
+            "pages": [
+              "system-nudge/nudge-type",
+              "system-nudge/nudge-scope",
+              "system-nudge/tracking-context"
+            ]
+          },
           "system-nudge/user-base",
           "system-nudge/display-elements",
           "system-nudge/communication",
