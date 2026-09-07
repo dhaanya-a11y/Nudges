@@ -11,7 +11,6 @@
       {
         "group": "System Nudge",
         "pages": [
-          "system-nudge/introduction",
           "system-nudge/nudge-type",
           "system-nudge/nudge-scope",
           "system-nudge/tracking-context",
