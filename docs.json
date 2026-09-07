@@ -7,7 +7,24 @@
   },
   "navigation": {
     "pages": [
-      "introduction"
+      {
+        "group": "Nudge Management",
+        "pages": [
+          "introduction",
+          {
+            "group": "Basic Details",
+            "pages": [
+              "nudge-type",
+              "nudge-scope",
+              "tracking-context"
+            ]
+          },
+          "user-base",
+          "display-elements",
+          "communication",
+          "review"
+        ]
+      }
     ]
   }
 }
