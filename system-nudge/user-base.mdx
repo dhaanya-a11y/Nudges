@@ -1,1 +1,67 @@
+---
+title: User Base
+description: Define the customers who are eligible to receive the nudge.
+---
 
+## Overview
+
+The **User Base** defines the group of customers who are eligible to receive the nudge.
+
+In this step, configure the criteria used to identify the target users. The user base can be defined using attributes available under different entities such as **Customer**, **Account**, **Card**, and **Card Control**.
+
+You can also estimate the number of users matching the configured criteria and configure additional controls for communication and duplicate accounts.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/n6.png"
+    alt="Set Up Nudge User Base"
+    className="w-[700px]"
+  />
+</div>
+
+## Set Up Nudge User Base
+
+### User Base
+
+The **User Base** section allows you to define the conditions used to identify customers for the nudge.
+
+Each criterion consists of:
+
+- An **entity**, such as Customer, Account, Card, or Card Control.
+- An **attribute** associated with the selected entity.
+- The corresponding value or condition used to define the user base.
+
+Select the required entity from the first dropdown and then select an attribute from **Select attribute**.
+
+The attributes available in the second dropdown depend on the selected entity.
+
+### Add Criteria
+
+Select **Add Criteria** to add additional conditions to the user base.
+
+Multiple criteria can be configured when the nudge needs to target users based on more than one condition.
+
+---
+
+## Customer
+
+Select **Customer** when the user base needs to be defined using customer-level information.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/n6.1.png"
+    alt="Customer attributes in Nudge User Base"
+    className="w-[700px]"
+  />
+</div>
+
+The available customer attributes include:
+
+| Attribute | Description |
+|---|---|
+| **Date of Birth** | The customer's date of birth, which can be used to identify customers based on their age or date-of-birth information. |
+| **KYC Status** | The customer's current KYC status, which can be used to identify customers based on their KYC completion or status. |
+| **FKYC Method** | The method through which the customer's FKYC was completed. |
+| **FKYC Status** | The current status of the customer's FKYC process. |
+| **Created On** | The date on which the customer's record was created. |
+| **Last Updated On** | The date on which the customer's customer record was most recently updated. |
