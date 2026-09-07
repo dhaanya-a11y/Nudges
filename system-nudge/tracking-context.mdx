@@ -1,93 +1,96 @@
 ---
 title: Tracking Context
-description: Link the nudge to the journey, batch, and offer context used for performance tracking.
+description: Associate the nudge with the journey, batch, and offer used for campaign tracking.
 ---
 
 ## Overview
 
-**Tracking Context** is used to associate a nudge with the campaign or workflow it belongs to.
+**Tracking Context** connects the nudge to the campaign or workflow in which it is being used.
 
-The configuration is divided into two parts:
+This step captures two types of context:
 
-- **Journey and Batch** — identifies the workflow in which the nudge is being used.
-- **Offer details** — identifies the offer associated with the nudge.
+- **Journey and Batch** — identifies the journey and the specific batch associated with the nudge.
+- **Offer Details** — associates the nudge with the relevant offer.
 
 <div className="flex justify-center my-6">
   <img
     src="/images/images/n5.png"
-    alt="Tracking Context"
+    alt="Tracking Context configuration"
     className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
   />
 </div>
 
-## Journey and Batch
+## Configure Journey and Batch
 
 ### Journey
 
-Select the **Journey** to which the nudge belongs.
+The **Journey** field is used to select the journey associated with the nudge.
 
-The selected journey determines the workflow in which the nudge is being configured.
+- Select the required journey from the dropdown.
+- The selected journey determines the available batch options.
 
 ### Batch
 
-Select the **Batch** associated with the selected journey.
+The **Batch** field is used to select a batch within the selected journey.
 
-The Batch field is populated based on the selected Journey, allowing the nudge to be linked to a specific batch within that journey.
+- Select the required batch from the dropdown.
+- The batch options are populated based on the selected journey.
+- Selecting a batch associates the nudge with that specific batch.
 
-<Info>
-The **Batch** selection is dependent on the **Journey** selected above.
-</Info>
+<Note>
+Select the **Journey** before selecting the **Batch**, as the available batches depend on the selected journey.
+</Note>
 
-## Offer Details
+## Configure Offer Details
 
-The offer section allows the nudge to be associated with the offer that is relevant to the campaign.
+Use the offer details section to associate the nudge with an existing offer.
 
 <div className="flex justify-center my-6">
   <img
     src="/images/images/n5.1.png"
-    alt="Offer details in Tracking Context"
+    alt="Offer details configuration"
     className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
   />
 </div>
 
 ### Offer Category
 
-Select the category of the offer associated with the nudge.
+The **Offer Category** identifies the type of offer associated with the nudge.
 
-The interface currently shows:
+The available options shown in the interface are:
 
 - **Transactional Offer** — available for selection.
-- **Milestone Offer** — disabled and unavailable for selection.
+- **Milestone Offer** — currently disabled.
+
+<Warning>
+**Milestone Offer** is currently disabled and cannot be selected.
+</Warning>
 
 ### Offer Type
 
 Select the **Offer Type** associated with the selected offer category.
 
-This field is used to narrow down the offer configuration before selecting the specific offer.
+The available offer types are presented based on the selected category.
 
 ### Offer
 
-Select the specific **Offer** that the nudge is associated with.
+Select the specific **Offer** associated with the nudge.
 
-The selected offer provides the final offer-level reference for the nudge.
-
-<Note>
-**Milestone Offer** is currently disabled in the **Offer Category** field and cannot be selected.
-</Note>
+The selected offer completes the offer association for the nudge.
 
 ## Example
 
-A nudge is being configured for a customer communication that belongs to a specific journey and batch and is associated with a transactional offer.
+Suppose a nudge needs to be associated with a particular customer journey and a transactional offer.
 
 1. Select the required **Journey**.
 2. Select the corresponding **Batch**.
-3. Choose **Transactional Offer** under **Offer Category**.
+3. Select **Transactional Offer** under **Offer Category**.
 4. Select the required **Offer Type**.
 5. Select the relevant **Offer**.
 6. Select **Continue**.
 
-This completes the Tracking Context configuration and allows the nudge to move to the next stage of setup.
+The nudge is now associated with the selected journey, batch, and offer context.
 
 ## What's Next?
 
-After completing **Tracking Context**, continue to **User Base** to define the customers who should receive the nudge.
+Select **Continue** to proceed to **User Base**, where you configure the customer set for the nudge.
