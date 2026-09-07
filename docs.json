@@ -10,7 +10,7 @@
       {
         "group": "Nudge Management",
         "pages": [
-          "system-nudge/introduction",
+          "introduction",
           {
             "group": "Basic Details",
             "pages": [
