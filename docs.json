@@ -7,22 +7,18 @@
   },
   "navigation": {
     "pages": [
+      "introduction",
       {
-        "group": "Nudge Management",
+        "group": "System Nudge",
         "pages": [
-          "introduction",
-          {
-            "group": "Basic Details",
-            "pages": [
-              "nudge-type",
-              "nudge-scope",
-              "tracking-context"
-            ]
-          },
-          "user-base",
-          "display-elements",
-          "communication",
-          "review"
+          "system-nudge/introduction",
+          "system-nudge/nudge-type",
+          "system-nudge/nudge-scope",
+          "system-nudge/tracking-context",
+          "system-nudge/user-base",
+          "system-nudge/display-elements",
+          "system-nudge/communication",
+          "system-nudge/review"
         ]
       }
     ]
