@@ -5,9 +5,9 @@ description: Select the type of nudge to be created based on how the nudge is tr
 
 ## Overview
 
-The **Nudge Type** defines the mechanism used to trigger a nudge. It determines whether the nudge is triggered through system-based information, a customer file, or a touchpoint within a journey.
+**Nudge Type** defines the mechanism used to trigger a nudge. It determines whether the nudge is triggered using system-based information, customer information provided through a file, or a touchpoint within a customer journey.
 
-During nudge creation, choose the Nudge Type that corresponds to the required trigger mechanism.
+During nudge creation, select the **Nudge Type** that corresponds to the required trigger mechanism.
 
 Hyperface supports the following Nudge Types:
 
@@ -27,14 +27,14 @@ Hyperface supports the following Nudge Types:
 The selected **Nudge Type** determines the configuration flow available in the subsequent stages of nudge creation.
 </Note>
 
-## Comparing Nudge Types
+## Nudge Type Comparison
 
 | **Consideration** | **System Nudge** | **File Upload** | **Journey Nudge** |
-|-------------------|------------------|-----------------|-------------------|
+|---|---|---|---|
 | **Trigger Mechanism** | System-based triggers | `.csv` file | Journey touchpoints |
 | **Information Used** | Customer parameters available in the system | Customer information provided in the file | Information from the customer journey |
 | **Communication Context** | System-driven | File-based | Journey-based |
-| **Key Characteristics** | Uses configured customer parameters | Uses a defined customer set provided through a file | Connects communication with the next step of a journey |
+| **Key Characteristics** | Uses configured customer parameters | Uses a defined customer set provided through a file | Connects the communication with the next step of a journey |
 
 ---
 
@@ -82,6 +82,4 @@ The communication contains a link that directs the customer to a **landing page*
 
 ### Example
 
-A customer reaches a configured touchpoint within a journey. A Journey Nudge sends the customer a communication through **SMS, WhatsApp, or Email** with a link to the landing page. The information from the previous journey step is retained, allowing the customer to continue to the next step.
-
----
+A customer reaches a configured touchpoint within a journey. A **Journey Nudge** sends the customer a communication through **SMS, WhatsApp, or Email** with a link to the landing page. The information from the previous journey step is retained, allowing the customer to continue to the next step.
