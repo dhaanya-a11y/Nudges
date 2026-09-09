@@ -121,27 +121,91 @@ The following attributes can be selected when defining criteria for the card:
 
 #### Card Status and Identification
 
-- **Status** — Select a criterion based on the card's status.
-- **Smart Tag** — Select a criterion based on the Smart Tag associated with the card.
-- **Card Type** — Select a criterion based on the card type.
-- **Card Block Codes** — Select a criterion based on the block codes associated with the card.
+- **Status** — The current status of the card.
+- **Smart Tag** — The Smart Tag associated with the card.
+- **Card Type** — The type of card.
+- **Card Block Codes** — The block codes associated with the card.
 
 #### Card Lifecycle
 
-- **Card Expiry** — Select a criterion based on the card's expiry.
-- **Physically Issued** — Select a criterion based on whether the physical card has been issued.
-- **Virtually Issued** — Select a criterion based on whether the virtual card has been issued.
-- **Physical Card Activated** — Select a criterion based on whether the physical card has been activated.
-- **Virtual Card Activated** — Select a criterion based on whether the virtual card has been activated.
-- **Is Ever Activated** — Select a criterion based on whether the card has ever been activated.
+- **Card Expiry** — The expiry details of the card.
+- **Physically Issued** — The physical card issuance status.
+- **Virtually Issued** — The virtual card issuance status.
+- **Physical Card Activated** — The activation status of the physical card.
+- **Virtual Card Activated** — The activation status of the virtual card.
+- **Is Ever Activated** — The card's activation history.
 
 #### Card State
 
-- **Locked** — Select a criterion based on whether the card is locked.
-- **Blocked** — Select a criterion based on whether the card is blocked.
+- **Locked** — The locked status of the card.
+- **Blocked** — The blocked status of the card.
 
 #### Record Information
 
-- **Created On** — Select a criterion based on when the card record was created.
-- **Last Updated On** — Select a criterion based on when the card record was last updated.
+- **Created On** — The date on which the card record was created.
+- **Last Updated On** — The date on which the card record was last updated.
+## Card Control
 
+Select **Card Control** to define user-base criteria using card-control attributes.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/6.4.png"
+    alt="Card Control attributes in Nudge User Base"
+    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+  />
+</div>
+
+The available attributes are grouped into **Domestic Controls** and **International Controls** based on the transaction context.
+
+### Domestic Controls
+
+Domestic Controls relate to transaction types performed within the domestic region.
+- **Domestic Contact** — Transactions made using contact-based card payments within the domestic region.
+- **Domestic Contactless** — Transactions made using contactless card payments within the domestic region.
+- **Domestic Ecommerce** — Online purchases or payments made through ecommerce platforms within the domestic region.
+- **Domestic Magnetic** — Transactions made using the card's magnetic stripe within the domestic region.
+- **Domestic Moto** — Mail-order and telephone-order transactions where the card is not physically presented within the domestic region.
+- **Domestic Cash** — Cash transactions, such as cash withdrawals, within the domestic region.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/6.4.1.png"
+    alt="International Card Control attributes in Nudge User Base"
+    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+  />
+</div>
+
+### International Controls
+
+International Controls relate to transaction types performed outside the domestic region.
+- **International Contact** — Transactions made using contact-based card payments outside the domestic region.
+- **International Contactless** — Transactions made using contactless card payments outside the domestic region.
+- **International Ecommerce** — Online purchases or payments made through ecommerce platforms outside the domestic region.
+- **International Magnetic** — Transactions made using the card's magnetic stripe outside the domestic region.
+- **International Moto** — Mail-order and telephone-order transactions where the card is not physically presented outside the domestic region.
+- **International Cash** — Cash transactions, such as cash withdrawals, outside the domestic region.
+
+## Additional User Base Controls
+
+After defining the user-base criteria, the following options are available to control communication eligibility and duplicate accounts.
+
+### Override Do Not Communicate (DNC)
+
+Enable **Override Do Not Communicate (DNC)** to allow the nudge to be sent to eligible customers who are part of the **Do Not Communicate (DNC)** list.
+
+### Allow Duplicate Accounts
+
+Enable **Allow Duplicate Accounts** when duplicate accounts should be included in the nudge's user base.
+
+By default, duplicate accounts are blocked to prevent customers from receiving multiple communications. This option should be enabled only for pre-approved campaigns where duplicate accounts are intentionally required.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/n6.5.png"
+    alt="Additional User Base controls"
+    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+  />
+</div>
+
+Once the user-base criteria and required controls are configured, select **Continue** to proceed to the **Display Elements** step.
