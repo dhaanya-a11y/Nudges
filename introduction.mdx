@@ -1,31 +1,41 @@
 ---
 title: Introduction
-description: Overview of Nudges and the different nudge types available.
+description: Understand what Nudges are, how they are structured, and the different nudge types available.
 ---
+
+## Overview
 
 **Nudges** are customer communications designed to encourage customers to take the **next action toward a defined goal**.
 
-A nudge can communicate an action, reminder, or benefit to a customer based on the configured nudge criteria. It can be presented as an **in-app experience**, such as a PWA banner, or delivered through external communication channels such as **SMS, WhatsApp, RCS, or Email**.
+A nudge can communicate an **action, reminder, or benefit** based on the configured criteria. It can be presented as an **in-app experience**, such as a PWA banner, or delivered through external communication channels including **SMS, WhatsApp, RCS, and Email**.
 
 <Info>
 A Nudge brings together **Eligibility, What to Send, How to Send, and When to Send** to define the customer communication.
 </Info>
 
-## How a Nudge is Defined
+## How a Nudge Works
 
-A nudge is configured around four key components that determine **who receives the communication, what is communicated, how it reaches the customer, and when it is triggered**.
+A nudge is configured around four key components. Together, these components define **who should receive the communication, what they should receive, how it should be delivered, and when it should be triggered**.
 
 ### 1. Eligibility
 
 **Eligibility** defines the customers to whom the nudge applies.
 
-Customer parameters and configured criteria determine which customers are considered for the nudge. For example, a System Nudge can use customer parameters such as **card details, card status, and date of birth**.
+The configured customer parameters and criteria determine which customers qualify for the nudge.
+
+For example, a **System Nudge** can use customer parameters such as:
+
+- **Card details**
+- **Card status**
+- **Date of birth**
+
+These parameters are used to determine the customers who meet the configured criteria.
 
 ### 2. What to Send
 
-**What to Send** defines the communication presented or delivered to the customer.
+**What to Send** defines the content that is presented or delivered to the customer.
 
-The communication uses a configured **template** that contains the message to be communicated.
+The communication is created using a configured **template**, which contains the message to be communicated.
 
 **Example:**
 
@@ -33,21 +43,21 @@ The communication uses a configured **template** that contains the message to be
 
 ### 3. How to Send
 
-**How to Send** defines the channel through which the nudge reaches the customer.
+**How to Send** specifies the communication channel through which the nudge reaches the customer.
 
-Nudges can be delivered through the following channels:
+The available channels are:
 
 - **PWA** — Presents the nudge as an in-app experience, such as a banner.
-- **SMS** — Delivers the configured communication as a text message.
+- **SMS** — Delivers the configured communication through a text message.
 - **WhatsApp** — Delivers the configured communication through WhatsApp.
 - **RCS** — Delivers the configured communication through RCS.
 - **Email** — Delivers the configured communication through Email.
 
 ### 4. When to Send
 
-**When to Send** defines the trigger for the nudge.
+**When to Send** defines when the nudge is triggered.
 
-The configured trigger determines when the communication is sent.
+The configured trigger determines the point at which the communication is sent to the customer.
 
 <Tip>
 For example, a nudge can be configured to be sent at **5:00 PM on October 20, 2026**.
@@ -55,7 +65,7 @@ For example, a nudge can be configured to be sent at **5:00 PM on October 20, 20
 
 ## Nudge Types
 
-Nudges are available in different types, based on how the nudge is triggered or configured.
+Nudges are available in different types based on how they are triggered or configured.
 
 <CardGroup cols={2}>
   <Card title="System Nudge" icon="gear">
@@ -63,11 +73,11 @@ Nudges are available in different types, based on how the nudge is triggered or 
   </Card>
 
   <Card title="File Upload" icon="file-arrow-up">
-    Uses a **`.csv` file upload** to trigger nudges.
+    Uses a **`.csv` file upload** to trigger nudges for the customer information provided through the file.
   </Card>
 
   <Card title="Journey Nudge" icon="route">
-    Sends a nudge through **SMS, WhatsApp, or Email** with a link that directs the customer to a **landing page**, where information from the previous journey step is retained and the customer can proceed to the **next step**.
+    Sends a nudge through **SMS, WhatsApp, or Email** with a link to a **landing page**. Information from the previous journey step is retained on the landing page, allowing the customer to proceed to the **next step**.
   </Card>
 
   <Card title="Promotional Nudge" icon="tag">
@@ -79,10 +89,10 @@ Nudges are available in different types, based on how the nudge is triggered or 
   </Card>
 
   <Card title="Other" icon="gift">
-    Delivers value through **gift vouchers**.
+    Delivers value to customers through **gift vouchers**.
   </Card>
 </CardGroup>
 
 <Note>
-The configuration and options available for a nudge depend on the selected **Nudge Type**.
+The configuration and options available during nudge creation depend on the selected **Nudge Type**.
 </Note>
