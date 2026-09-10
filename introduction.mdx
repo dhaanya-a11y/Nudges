@@ -64,18 +64,38 @@ For example, a nudge can be configured to be sent at **5:00 PM on October 20, 20
 </Tip>
 
 ## Nudge Types
+## Nudge Types
 
 Nudges are available in different types based on how they are triggered or configured.
 
-| **Nudge Type** | **Description** |
-|---|---|
-| **System Nudge** | Uses system-based triggers and customer parameters such as **card details, card status, and date of birth**. |
-| **File Upload** | Uses a **`.csv` file upload** to trigger nudges for the customer information provided through the file. |
-| **Journey Nudge** | Sends a nudge through **SMS, WhatsApp, or Email** with a link to a **landing page**. Information from the previous journey step is retained on the landing page, allowing the customer to proceed to the **next step**. |
-| **Promotional Nudge** | Uses **datapoints across offers** to trigger a nudge. |
-| **Cross Sell / Up Sell** | Uses **EMI-related attributes** to create a nudge. |
-| **Other** | Delivers value to customers through **gift vouchers**. |
+<CardGroup cols={2}>
+
+  <Card title="System Nudge" icon="gear">
+    Uses **system-based triggers** and customer parameters such as **card details, card status, and date of birth**.
+  </Card>
+
+  <Card title="File Upload" icon="file-arrow-up">
+    Uses a **`.csv` file upload** to trigger nudges.
+  </Card>
+
+  <Card title="Journey Nudge" icon="route">
+    Sends a nudge through **SMS, WhatsApp, or Email** with a link that directs the customer to a **landing page**. Information from the previous journey step is retained on the landing page, allowing the customer to proceed to the **next step**.
+  </Card>
+
+  <Card title="Promotional Nudge" icon="tag">
+    Uses **datapoints across offers** to trigger a nudge.
+  </Card>
+
+  <Card title="Cross Sell / Up Sell" icon="arrow-up-right">
+    Uses **EMI-related attributes** to create a nudge.
+  </Card>
+
+  <Card title="Other" icon="gift">
+    Delivers value through **gift vouchers**.
+  </Card>
+
+</CardGroup>
 
 <Note>
-The configuration and options available during nudge creation depend on the selected **Nudge Type**.
+The configuration and options available for a nudge depend on the selected **Nudge Type**.
 </Note>
