@@ -23,6 +23,7 @@
           "system-nudge/display-elements",
           "system-nudge/interaction-limit",
           "system-nudge/communication",
+          "system-nudge/review"
         ]
       }
     ]
