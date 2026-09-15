@@ -1,15 +1,20 @@
 ---
 title: User Base
-description: Define the customers who are eligible to receive the nudge.
+description: Define the customers who are eligible to receive the Nudge.
 ---
 
 ## Overview
 
-The **User Base** defines the group of customers who are eligible to receive the nudge.
+The **User Base** defines the group of customers who are eligible to receive the Nudge.
 
-In this step, configure the criteria used to identify the target users. The user base can be defined using attributes available under different entities such as **Customer**, **Account**, **Card**, and **Card Control**.
+Use this step to configure the criteria that identify the target customers. Criteria can be based on attributes available under different entities, including:
 
-You can also estimate the number of users matching the configured criteria and configure additional controls for communication and duplicate accounts.
+- **Customer**
+- **Account**
+- **Card**
+- **Card Control**
+
+You can also estimate the number of customers matching the configured criteria and apply additional controls related to communication eligibility and duplicate accounts.
 
 <div className="flex justify-center my-6">
   <img
@@ -19,27 +24,27 @@ You can also estimate the number of users matching the configured criteria and c
   />
 </div>
 
-## Set Up Nudge User Base
+## Set Up the User Base
 
-### User Base
+### User Base Criteria
 
-The **User Base** section allows you to define the conditions used to identify customers for the nudge.
+The **User Base** section allows you to define the conditions used to identify customers for the Nudge.
 
 Each criterion consists of:
 
-- An **entity**, such as Customer, Account, Card, or Card Control.
-- An **attribute** associated with the selected entity.
-- The corresponding value or condition used to define the user base.
+1. An **entity**, such as Customer, Account, Card, or Card Control.
+2. An **attribute** associated with the selected entity.
+3. The corresponding **value or condition** used to define the user base.
 
-Select the required entity from the first dropdown and then select an attribute from **Select attribute**.
+Select the required entity from the first dropdown, then select an attribute from **Select attribute**.
 
-The attributes available in the second dropdown depend on the selected entity.
+The attributes available in **Select attribute** depend on the entity selected.
 
 ### Add Criteria
 
-Select **Add Criteria** to add additional conditions to the user base.
+Select **Add Criteria** to add additional conditions.
 
-Multiple criteria can be configured when the nudge needs to target users based on more than one condition.
+Multiple criteria can be configured when the Nudge needs to target customers based on more than one condition.
 
 ---
 
@@ -55,16 +60,20 @@ Select **Customer** when the user base needs to be defined using customer-level 
   />
 </div>
 
-The available customer attributes include:
+### Customer Attributes
+
+The following attributes are available under **Customer**:
 
 | Attribute | Description |
-|---|---|
+| --- | --- |
 | **Date of Birth** | The customer's date of birth. This attribute can be used to identify customers based on their date of birth or age. |
 | **KYC Status** | **KYC (Know Your Customer)** is the process of verifying a customer's identity. This attribute indicates the customer's current KYC verification status. |
 | **FKYC Method** | **FKYC (Full KYC)** refers to the customer's full KYC verification. This attribute indicates the method through which the customer's FKYC was completed. |
 | **FKYC Status** | Indicates the current status of the customer's **Full KYC (FKYC)** verification. |
 | **Created On** | The date on which the customer's record was created in the system. |
 | **Last Updated On** | The date on which the customer's record was most recently updated in the system. |
+
+---
 
 ## Account
 
@@ -80,20 +89,24 @@ Select **Account** to define user-base criteria using account-level attributes.
 
 ### Account Attributes
 
-The following attributes are available for selection under **Account**:
+The following attributes are available under **Account**:
 
-- **Status** — Used to define a criterion based on the account status.
-- **Smart Tag** — Used to define a criterion based on the Smart Tag associated with the account.
-- **Statement Due Date** — Used to define a criterion based on the account's statement due date.
-- **Created On** — Used to define a criterion based on the account creation date.
-- **Last Updated On** — Used to define a criterion based on the date the account was last updated.
-- **Account Block Codes** — Used to define a criterion based on the block codes associated with the account.
+| Attribute | Description |
+| --- | --- |
+| **Status** | Used to define a criterion based on the account status. |
+| **Smart Tag** | Used to define a criterion based on the Smart Tag associated with the account. |
+| **Statement Due Date** | Used to define a criterion based on the account's statement due date. |
+| **Created On** | Used to define a criterion based on the account creation date. |
+| **Last Updated On** | Used to define a criterion based on the date the account was last updated. |
+| **Account Block Codes** | Used to define a criterion based on the block codes associated with the account. |
 
 ### Add Account Criteria
 
 Select the required attribute from the **Account** attribute dropdown and configure the corresponding condition.
 
 Select **Add Criteria** to add additional conditions to the user base.
+
+---
 
 ## Card
 
@@ -115,35 +128,46 @@ Select **Card** to define user-base criteria using attributes associated with a 
   />
 </div>
 
-### Available Card Attributes
+### Card Attributes
 
-The following attributes can be selected when defining criteria for the card:
+The available Card attributes are grouped by the type of information they represent.
 
 #### Card Status and Identification
 
-- **Status** — The current status of the card.
-- **Smart Tag** — The Smart Tag associated with the card.
-- **Card Type** — The type of card.
-- **Card Block Codes** — The block codes associated with the card.
+| Attribute | Description |
+| --- | --- |
+| **Status** | The current status of the card. |
+| **Smart Tag** | The Smart Tag associated with the card. |
+| **Card Type** | The type of card. |
+| **Card Block Codes** | The block codes associated with the card. |
 
 #### Card Lifecycle
 
-- **Card Expiry** — The expiry details of the card.
-- **Physically Issued** — The physical card issuance status.
-- **Virtually Issued** — The virtual card issuance status.
-- **Physical Card Activated** — The activation status of the physical card.
-- **Virtual Card Activated** — The activation status of the virtual card.
-- **Is Ever Activated** — The card's activation history.
+| Attribute | Description |
+| --- | --- |
+| **Card Expiry** | The expiry details of the card. |
+| **Physically Issued** | The physical card issuance status. |
+| **Virtually Issued** | The virtual card issuance status. |
+| **Physical Card Activated** | The activation status of the physical card. |
+| **Virtual Card Activated** | The activation status of the virtual card. |
+| **Is Ever Activated** | The card's activation history. |
 
 #### Card State
 
-- **Locked** — The locked status of the card.
-- **Blocked** — The blocked status of the card.
+| Attribute | Description |
+| --- | --- |
+| **Locked** | The locked status of the card. |
+| **Blocked** | The blocked status of the card. |
 
 #### Record Information
 
-- **Created On** — The date on which the card record was created.
-- **Last Updated On** — The date on which the card record was last updated.
+| Attribute | Description |
+| --- | --- |
+| **Created On** | The date on which the card record was created. |
+| **Last Updated On** | The date on which the card record was last updated. |
+
+---
+
 ## Card Control
 
 Select **Card Control** to define user-base criteria using card-control attributes.
@@ -161,12 +185,15 @@ The available attributes are grouped into **Domestic Controls** and **Internatio
 ### Domestic Controls
 
 Domestic Controls relate to transaction types performed within the domestic region.
-- **Domestic Contact** — Transactions made using contact-based card payments within the domestic region.
-- **Domestic Contactless** — Transactions made using contactless card payments within the domestic region.
-- **Domestic Ecommerce** — Online purchases or payments made through ecommerce platforms within the domestic region.
-- **Domestic Magnetic** — Transactions made using the card's magnetic stripe within the domestic region.
-- **Domestic Moto** — Mail-order and telephone-order transactions where the card is not physically presented within the domestic region.
-- **Domestic Cash** — Cash transactions, such as cash withdrawals, within the domestic region.
+
+| Attribute | Description |
+| --- | --- |
+| **Domestic Contact** | Transactions made using contact-based card payments within the domestic region. |
+| **Domestic Contactless** | Transactions made using contactless card payments within the domestic region. |
+| **Domestic Ecommerce** | Online purchases or payments made through ecommerce platforms within the domestic region. |
+| **Domestic Magnetic** | Transactions made using the card's magnetic stripe within the domestic region. |
+| **Domestic Moto** | Mail-order and telephone-order transactions where the card is not physically presented within the domestic region. |
+| **Domestic Cash** | Cash transactions, such as cash withdrawals, within the domestic region. |
 
 <div className="flex justify-center my-6">
   <img
@@ -179,26 +206,33 @@ Domestic Controls relate to transaction types performed within the domestic regi
 ### International Controls
 
 International Controls relate to transaction types performed outside the domestic region.
-- **International Contact** — Transactions made using contact-based card payments outside the domestic region.
-- **International Contactless** — Transactions made using contactless card payments outside the domestic region.
-- **International Ecommerce** — Online purchases or payments made through ecommerce platforms outside the domestic region.
-- **International Magnetic** — Transactions made using the card's magnetic stripe outside the domestic region.
-- **International Moto** — Mail-order and telephone-order transactions where the card is not physically presented outside the domestic region.
-- **International Cash** — Cash transactions, such as cash withdrawals, outside the domestic region.
+
+| Attribute | Description |
+| --- | --- |
+| **International Contact** | Transactions made using contact-based card payments outside the domestic region. |
+| **International Contactless** | Transactions made using contactless card payments outside the domestic region. |
+| **International Ecommerce** | Online purchases or payments made through ecommerce platforms outside the domestic region. |
+| **International Magnetic** | Transactions made using the card's magnetic stripe outside the domestic region. |
+| **International Moto** | Mail-order and telephone-order transactions where the card is not physically presented outside the domestic region. |
+| **International Cash** | Cash transactions, such as cash withdrawals, outside the domestic region. |
+
+---
 
 ## Additional User Base Controls
 
-After defining the user-base criteria, the following options are available to control communication eligibility and duplicate accounts.
+After defining the user-base criteria, you can configure additional options that control communication eligibility and duplicate accounts.
 
 ### Override Do Not Communicate (DNC)
 
-Enable **Override Do Not Communicate (DNC)** to allow the nudge to be sent to eligible customers who are part of the **Do Not Communicate (DNC)** list.
+Enable **Override Do Not Communicate (DNC)** to allow the Nudge to be sent to eligible customers who are part of the **Do Not Communicate (DNC)** list.
 
 ### Allow Duplicate Accounts
 
-Enable **Allow Duplicate Accounts** when duplicate accounts should be included in the nudge's user base.
+Enable **Allow Duplicate Accounts** when duplicate accounts should be included in the Nudge's user base.
 
-By default, duplicate accounts are blocked to prevent customers from receiving multiple communications. This option should be enabled only for pre-approved campaigns where duplicate accounts are intentionally required.
+By default, duplicate accounts are blocked to prevent customers from receiving multiple communications.
+
+Enable this option only for **pre-approved campaigns** where duplicate accounts are intentionally required.
 
 <div className="flex justify-center my-6">
   <img
@@ -208,4 +242,6 @@ By default, duplicate accounts are blocked to prevent customers from receiving m
   />
 </div>
 
-Once the user-base criteria and required controls are configured, select **Continue** to proceed to the **Display Elements** step.
+## What's Next?
+
+After configuring the user-base criteria and required controls, select **Continue** to proceed to **Display Elements**.
