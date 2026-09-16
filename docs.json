@@ -12,18 +12,40 @@
         "pages": [
           "introduction",
           {
-            "group": "Basic Details",
+            "group": "Batch",
             "pages": [
-              "system-nudge/nudge-type",
-              "system-nudge/nudge-scope",
-              "system-nudge/tracking-context"
+              {
+                "group": "Basic Details",
+                "pages": [
+                  "batch/nudge-type",
+                  "batch/nudge-scope",
+                  "batch/tracking-context"
+                ]
+              },
+              "batch/user-base",
+              "batch/display-elements",
+              "batch/interaction-limit",
+              "batch/communication",
+              "batch/review"
             ]
           },
-          "system-nudge/user-base",
-          "system-nudge/display-elements",
-          "system-nudge/interaction-limit",
-          "system-nudge/communication",
-          "system-nudge/review"
+          {
+            "group": "Event-Based",
+            "pages": [
+              {
+                "group": "Basic Details",
+                "pages": [
+                  "event-based/basic-details"
+                ]
+              },
+              "event-based/event-trigger",
+              "event-based/user-base",
+              "event-based/timing",
+              "event-based/message-content",
+              "event-based/frequency-limits",
+              "event-based/review"
+            ]
+          }
         ]
       }
     ]
