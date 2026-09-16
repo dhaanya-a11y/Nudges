@@ -35,15 +35,14 @@
               {
                 "group": "Basic Details",
                 "pages": [
-                  "event-based/basic-details"
+                  "event-based/event-trigger",
+                  "event-based/user-base",
+                  "event-based/timing",
+                  "event-based/message-content",
+                  "event-based/frequency-limits",
+                  "event-based/review"
                 ]
-              },
-              "event-based/event-trigger",
-              "event-based/user-base",
-              "event-based/timing",
-              "event-based/message-content",
-              "event-based/frequency-limits",
-              "event-based/review"
+              }
             ]
           }
         ]
