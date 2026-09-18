@@ -8,37 +8,21 @@
   "navigation": {
     "groups": [
       {
-        "group": "Batch",
+        "group": "Overview",
         "pages": [
-          {
-            "group": "Basic Details",
-            "pages": [
-              "batch/nudge-type",
-              "batch/nudge-scope",
-              "batch/tracking-context"
-            ]
-          },
-          "batch/user-base",
-          "batch/display-elements",
-          "batch/interaction-limit",
-          "batch/communication",
-          "batch/review"
+          "introduction",
+          "create-nudge"
         ]
       },
       {
-        "group": "Event-Based",
+        "group": "Event Nudge",
         "pages": [
-          {
-            "group": "Basic Details",
-            "pages": [
-              "event-based/event-trigger",
-              "event-based/user-base",
-              "event-based/timing",
-              "event-based/message-content",
-              "event-based/frequency-limits",
-              "event-based/review"
-            ]
-          }
+          "event nudge/event-trigger",
+          "event nudge/user-base",
+          "event nudge/timing",
+          "event nudge/message-content",
+          "event nudge/frequency-limits",
+          "event nudge/review"
         ]
       }
     ]
