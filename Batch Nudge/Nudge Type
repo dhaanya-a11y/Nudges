@@ -17,7 +17,7 @@ Hyperface supports the following Nudge Types:
 
 <div className="flex justify-center my-6">
   <img
-    src="/images/images/n3.png"
+    src="/images/n3.png"
     alt="Nudge Type selection"
     className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
   />
