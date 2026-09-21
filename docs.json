@@ -15,6 +15,17 @@
         ]
       },
       {
+        "group": "Batch Nudge",
+        "pages": [
+          "Batch Nudge/Nudge Type",
+          "Batch Nudge/Nudge Scope",
+          "Batch Nudge/Tracking Context",
+          "Batch Nudge/User Base",
+          "Batch Nudge/Display Elements",
+          "Batch Nudge/Communication"
+        ]
+      },
+      {
         "group": "Event Nudge",
         "pages": [
           "event nudge/event-trigger",
