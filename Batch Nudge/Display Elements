@@ -1,1 +1,88 @@
+---
+title: Display Elements
+description: Configure how a Nudge is displayed to customers.
+---
 
+### Display Elements
+
+After configuring the **User Base**, the **Display Elements** screen is displayed.
+
+Use this step to define the appearance, content, and CTA of the Nudge in the PWA.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/7.png"
+    alt="Display Elements configuration"
+    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+  />
+</div>
+
+#### Display Settings
+
+Configure the basic display properties of the Nudge.
+
+| Field | Description |
+| --- | --- |
+| **Enable Nudge Display** | Enable or disable the Nudge display. |
+| **Nudge Labels** | Select labels to group Nudges. |
+| **Nudge Variant** | Select the base display format of the Nudge. |
+| **Location** | Select where the Nudge is displayed. |
+| **Display Order** | Specify the display priority of the Nudge. |
+
+#### Display Illustration
+
+Upload an illustration to be used with the Nudge.
+
+The supported file formats are **PNG, JPG, JPEG, and GIF**. The maximum file size is **1 MB**, and the image must have a **1:1 ratio**, with a recommended size of **400 × 400 pixels**.
+
+Select **Upload** to add the illustration.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/7.1.png"
+    alt="Display Illustration configuration"
+    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+  />
+</div>
+
+#### Nudge Content
+
+Define the content displayed to the customer in the PWA.
+
+| Field | Description |
+| --- | --- |
+| **Nudge Heading** | Title of the Nudge displayed to the customer. |
+| **Nudge Sub-Text** | Description of the Nudge displayed to the customer. |
+| **Text on Button** | Text displayed on the CTA button. |
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/7.2.png"
+    alt="Nudge content and color configuration"
+    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+  />
+</div>
+
+#### Nudge Colors
+
+Configure the colors used for the Nudge content and background.
+
+| Field | Description |
+| --- | --- |
+| **Nudge Sub-Text Color** | Font colour of the sub-text. |
+| **Nudge Heading Color** | Font colour of the heading. |
+| **Background Color** | Background colour of the Nudge. |
+
+#### CTA Redirection
+
+Enter the **Redirection Link** associated with the CTA button.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/7.3.png"
+    alt="Redirection Link configuration"
+    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+  />
+</div>
+
+After completing the configuration, select **Continue** to proceed to **Interaction Limit**.
