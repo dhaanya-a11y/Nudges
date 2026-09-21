@@ -1,9 +1,6 @@
 ---
-title: Tracking Context
-description: Associate the Nudge with the relevant journey, batch, and offer context.
+title: Tracking Context.
 ---
-
-## Overview
 
 **Tracking Context** associates the Nudge with the relevant journey, batch, and offer.
 
@@ -15,7 +12,9 @@ This step includes the following:
 - **Offer Type** — The type of offer within the selected category.
 - **Offer** — The specific offer associated with the Nudge.
 
+<Note>
 The available options depend on the selections made in the preceding fields.
+</Note>
 
 <div className="flex justify-center my-6">
   <img
@@ -27,23 +26,18 @@ The available options depend on the selections made in the preceding fields.
 
 ## Journey and Batch
 
-### Journey
+<Steps>
+  <Step title="Select the Journey">
+    Select the **Journey** associated with the Nudge. Choose the required Journey from the available options. The selected Journey determines the batches available in the **Batch** field.
+  </Step>
+  <Step title="Select the Batch">
+    Select the **Batch** associated with the selected Journey. Choose the required Batch from the available options. The available batches are populated based on the selected Journey and identify the specific batch within the Journey.
+  </Step>
+</Steps>
 
-Select the **Journey** associated with the Nudge.
-
-Choose the required Journey from the available options. The selected Journey determines the batches available in the **Batch** field.
-
-### Batch
-
-Select the **Batch** associated with the selected Journey.
-
-Choose the required Batch from the available options. The available batches are populated based on the selected Journey.
-
-The selected Batch identifies the specific batch within the Journey.
-
-<Note>
+<Warning>
 Select the **Journey** before selecting the **Batch**, as the available Batch options depend on the selected Journey.
-</Note>
+</Warning>
 
 ## Offer Association
 
@@ -57,30 +51,23 @@ Use the **Offer Association** section to associate the Nudge with the relevant o
   />
 </div>
 
-### Offer Category
-
-Select the **Offer Category** associated with the Nudge.
-
-The available options are:
-
-- **Transactional Offer** — Available for selection.
-- **Milestone Offer** — Displayed in the interface but currently disabled.
+<Steps>
+  <Step title="Offer Category">
+    Select the **Offer Category** associated with the Nudge. The available options are:
+    - **Transactional Offer** — Available for selection.
+    - **Milestone Offer** — Displayed in the interface but currently disabled.
+  </Step>
+  <Step title="Offer Type">
+    Select the **Offer Type** based on the selected **Offer Category**. The available offer types depend on the selected Offer Category.
+  </Step>
+  <Step title="Offer">
+    Select the specific **Offer** associated with the Nudge. The selected Offer completes the offer association for the Nudge.
+  </Step>
+</Steps>
 
 <Warning>
 **Milestone Offer** is currently disabled and cannot be selected.
 </Warning>
-
-### Offer Type
-
-Select the **Offer Type** based on the selected **Offer Category**.
-
-The available offer types depend on the selected Offer Category.
-
-### Offer
-
-Select the specific **Offer** associated with the Nudge.
-
-The selected Offer completes the offer association for the Nudge.
 
 ## What's Next?
 
