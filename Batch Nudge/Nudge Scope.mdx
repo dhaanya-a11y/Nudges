@@ -1,9 +1,6 @@
 ---
-title: Nudge Scope
-description: Configure the basic details and program applicability of the Nudge.
+title: Nudge Scope.
 ---
-
-## Overview
 
 **Nudge Scope** defines the basic details of the Nudge and the card programs to which it applies.
 
@@ -19,32 +16,24 @@ This step includes configuring the **Nudge Name, Nudge Description, Nudge Durati
 
 ## Configure Nudge Details
 
-### Nudge Name
+<Steps>
+  <Step title="Nudge Name">
+    Enter a **Nudge Name** to identify the Nudge. Use a name that clearly indicates its purpose.
 
-Enter a **Nudge Name** to identify the Nudge.
-
-Use a name that clearly indicates its purpose.
-
-**Example:** `Payment Reminder`
-
-### Nudge Description
-
-Enter a **Nudge Description** to provide additional information about the Nudge.
-
-Describe its purpose or context using a clear and relevant description.
-
-### Nudge Duration
-
-Define the period during which the Nudge will be active.
-
-- Select the **Start Date**.
-- Select the **End Date**.
-
-### Issuer
-
-Select the **Issuer** associated with the Nudge.
-
-The Issuer represents the **credit card issuing bank**. Select the appropriate issuer from the available options.
+    **Example:** `Payment Reminder`
+  </Step>
+  <Step title="Nudge Description">
+    Enter a **Nudge Description** to provide additional information about the Nudge. Describe its purpose or context using a clear and relevant description.
+  </Step>
+  <Step title="Nudge Duration">
+    Define the period during which the Nudge will be active.
+    - Select the **Start Date**.
+    - Select the **End Date**.
+  </Step>
+  <Step title="Issuer">
+    Select the **Issuer** associated with the Nudge. The Issuer represents the **credit card issuing bank**. Select the appropriate issuer from the available options.
+  </Step>
+</Steps>
 
 ## Configure Program Applicability
 
@@ -60,23 +49,24 @@ The **Program** field determines the card program or programs to which the Nudge
   </div>
 </div>
 
-### Program
+<Tabs>
+  <Tab title="Select Specific Programs">
+    Select the required program or programs from the **Program** field.
+    - Select multiple programs when the same Nudge needs to apply to more than one card program.
+    - When specific programs are selected, the Nudge applies only to those programs.
+  </Tab>
+  <Tab title="Apply to All Programs">
+    Enable **Apply to all current and future programs** when the Nudge should apply across card programs without selecting each program individually.
 
-Select the required program or programs from the **Program** field.
+    When enabled, the Nudge applies to:
+    - All current card programs.
+    - Future card programs.
+  </Tab>
+</Tabs>
 
-- Select multiple programs when the same Nudge needs to apply to more than one card program.
-- When specific programs are selected, the Nudge applies only to those programs.
-
-### Apply to All Current and Future Programs
-
-Enable **Apply to all current and future programs** when the Nudge should apply across card programs without selecting each program individually.
-
-When enabled, the Nudge applies to:
-
-- All current card programs.
-- Future card programs.
-
-When this option is not enabled, select the specific programs to which the Nudge should apply.
+<Note>
+When "Apply to all current and future programs" is not enabled, select the specific programs to which the Nudge should apply.
+</Note>
 
 ## What's Next?
 
