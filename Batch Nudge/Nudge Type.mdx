@@ -1,19 +1,10 @@
 ---
-title: Nudge Type
-description: Select the Nudge Type based on how the Nudge is triggered and the information used to initiate it.
+title: Nudge Type.
 ---
-
-## Overview
 
 **Nudge Type** defines how a Nudge is triggered and the source of information used to initiate it.
 
 During Nudge creation, select the Nudge Type that matches the required trigger mechanism and customer information source.
-
-Hyperface supports the following Nudge Types:
-
-- **System Nudge**
-- **File Upload**
-- **Journey Nudge**
 
 <div className="flex justify-center my-6">
   <img
@@ -27,9 +18,23 @@ Hyperface supports the following Nudge Types:
 The selected **Nudge Type** determines the configuration flow available in the subsequent stages of Nudge creation.
 </Info>
 
-## Nudge Type Comparison
+## Available Nudge Types
 
-The following table provides an overview of how each Nudge Type is triggered and the information it uses.
+Hyperface supports the following Nudge Types:
+
+<CardGroup cols={3}>
+  <Card title="System Nudge">
+    Triggered using customer parameters available in the system.
+  </Card>
+  <Card title="File Upload">
+    Triggered using a `.csv` file containing customer information.
+  </Card>
+  <Card title="Journey Nudge">
+    Triggered by touchpoints within a customer journey.
+  </Card>
+</CardGroup>
+
+## Comparison
 
 | Consideration | System Nudge | File Upload | Journey Nudge |
 | --- | --- | --- | --- |
@@ -49,15 +54,18 @@ Examples of customer parameters include:
 - **Card status**
 - **Date of birth**
 
-### How It Works
+<Steps>
+  <Step title="Configure customer parameters">
+    Required customer parameters are configured as part of the Nudge criteria.
+  </Step>
+  <Step title="System triggers communication">
+    The system uses the configured information to trigger the communication when the criteria are met.
+  </Step>
+</Steps>
 
-The required customer parameters are configured as part of the Nudge criteria. The system uses the configured information to trigger the communication when the criteria are met.
-
-### Example
-
-A Nudge needs to be triggered based on a customer's **card status**.
-
-The configured card-status information forms part of the criteria used to trigger the communication.
+<Accordion title="Example">
+A Nudge needs to be triggered based on a customer's **card status**. The configured card-status information forms part of the criteria used to trigger the communication.
+</Accordion>
 
 ## File Upload
 
@@ -65,15 +73,18 @@ A **File Upload** Nudge uses a **`.csv` file** to provide the customer informati
 
 The file can contain a defined set of customers for whom the Nudge needs to be triggered. This provides the customer set through a file rather than using customer parameters available in the system.
 
-### How It Works
+<Steps>
+  <Step title="Prepare the customer set">
+    A customer set is prepared in a **`.csv` file**.
+  </Step>
+  <Step title="Upload as part of configuration">
+    The file is provided as part of the Nudge configuration and used to trigger the Nudge for the specified customer set.
+  </Step>
+</Steps>
 
-A customer set is prepared in a **`.csv` file** and provided as part of the Nudge configuration. The information in the file is used to trigger the Nudge for the specified customer set.
-
-### Example
-
-A bank has a predefined set of customers who need to receive a particular communication.
-
-The customer information is provided in a **`.csv` file**, which is then used to trigger the Nudge for that customer set.
+<Accordion title="Example">
+A bank has a predefined set of customers who need to receive a particular communication. The customer information is provided in a **`.csv` file**, which is then used to trigger the Nudge for that customer set.
+</Accordion>
 
 ## Journey Nudge
 
@@ -85,25 +96,25 @@ The communication can be delivered through the following channels:
 - **WhatsApp**
 - **Email**
 
-The communication includes a link that directs the customer to a **landing page**.
+The communication includes a link that directs the customer to a **landing page**. Information from the previous journey step is retained on the landing page, allowing the customer to continue from the previous step and proceed to the **next step** of the journey.
 
-Information from the previous journey step is retained on the landing page. This allows the customer to continue from the previous step and proceed to the **next step** of the journey.
+<Steps>
+  <Step title="Customer reaches a touchpoint">
+    The customer reaches a configured touchpoint within a journey.
+  </Step>
+  <Step title="Communication is sent">
+    The Journey Nudge provides a communication through **SMS, WhatsApp, or Email** containing a link to the landing page.
+  </Step>
+  <Step title="Customer continues the journey">
+    Information from the previous journey step is retained on the landing page, allowing the customer to proceed to the next step.
+  </Step>
+</Steps>
 
-### How It Works
-
-The customer reaches a configured touchpoint within a journey. The Journey Nudge then provides a communication through **SMS, WhatsApp, or Email**.
-
-The communication contains a link to the landing page. When the customer accesses the landing page, information from the previous journey step is retained, allowing the customer to proceed to the next step.
-
-### Example
-
-A customer reaches a configured touchpoint within a journey.
-
-A **Journey Nudge** provides a communication through **SMS, WhatsApp, or Email** containing a link to the landing page. The information from the previous journey step is retained on the landing page, allowing the customer to continue to the next step.
+<Accordion title="Example">
+A customer reaches a configured touchpoint within a journey. A **Journey Nudge** provides a communication through **SMS, WhatsApp, or Email** containing a link to the landing page. The information from the previous journey step is retained, allowing the customer to continue to the next step.
+</Accordion>
 
 ## Choosing a Nudge Type
-
-Select the Nudge Type based on the source used to initiate the Nudge:
 
 - **System Nudge** — Select when the trigger uses **customer parameters available in the system**.
 - **File Upload** — Select when the customer information is provided through a **`.csv` file**.
