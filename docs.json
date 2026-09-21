@@ -24,18 +24,5 @@
           "batch-nudge/display-elements",
           "batch-nudge/communication"
         ]
-      },
-      {
-        "group": "Event Nudge",
-        "pages": [
-          "event nudge/event-trigger",
-          "event nudge/user-base",
-          "event nudge/timing",
-          "event nudge/message-content",
-          "event nudge/frequency-limits",
-          "event nudge/review"
-        ]
       }
-    ]
-  }
-}
+     
