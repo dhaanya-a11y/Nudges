@@ -17,12 +17,12 @@
       {
         "group": "Batch Nudge",
         "pages": [
-          "Batch Nudge/Nudge Type",
-          "Batch Nudge/Nudge Scope",
-          "Batch Nudge/Tracking Context",
-          "Batch Nudge/User Base",
-          "Batch Nudge/Display Elements",
-          "Batch Nudge/Communication"
+          "batch-nudge/nudge-type",
+          "batch-nudge/nudge-scope",
+          "batch-nudge/tracking-context",
+          "batch-nudge/user-base",
+          "batch-nudge/display-elements",
+          "batch-nudge/communication"
         ]
       },
       {
