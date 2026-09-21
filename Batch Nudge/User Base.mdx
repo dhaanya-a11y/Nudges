@@ -1,18 +1,10 @@
 ---
-title: User Base
-description: Define the customers who are eligible to receive the Nudge.
+title: User Base.
 ---
-
-## Overview
 
 The **User Base** defines the group of customers who are eligible to receive the Nudge.
 
-Use this step to configure the criteria that identify the target customers. Criteria can be based on attributes available under different entities, including:
-
-- **Customer**
-- **Account**
-- **Card**
-- **Card Control**
+Use this step to configure the criteria that identify the target customers. Criteria can be based on attributes available under different entities, including **Customer, Account, Card, and Card Control**.
 
 You can also estimate the number of customers matching the configured criteria and apply additional controls related to communication eligibility and duplicate accounts.
 
@@ -26,213 +18,174 @@ You can also estimate the number of customers matching the configured criteria a
 
 ## Set Up the User Base
 
-### User Base Criteria
-
 The **User Base** section allows you to define the conditions used to identify the customers who should receive the Nudge.
 
-Each criterion consists of:
+<Steps>
+  <Step title="Select an entity">
+    Choose an entity, such as Customer, Account, Card, or Card Control.
+  </Step>
+  <Step title="Select an attribute">
+    Select an attribute associated with the chosen entity from **Select attribute**. The attributes available depend on the selected entity.
+  </Step>
+  <Step title="Define the value or condition">
+    Provide the corresponding value or condition used to define the user base.
+  </Step>
+  <Step title="Add more criteria (optional)">
+    Select **Add Criteria** to add additional conditions. Multiple criteria can be configured when the Nudge needs to target customers based on more than one condition.
+  </Step>
+</Steps>
 
-1. An **entity**, such as Customer, Account, Card, or Card Control.
-2. An **attribute** associated with the selected entity.
-3. The corresponding **value or condition** used to define the user base.
+## Entity Attributes
 
-Select the required entity from the first dropdown and then select an attribute from **Select attribute**.
+<Tabs>
+  <Tab title="Customer">
+    <div className="flex justify-center my-6">
+      <img
+        src="/images/images/n6.1.png"
+        alt="Customer attributes in Nudge User Base"
+        className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+      />
+    </div>
 
-The attributes available under **Select attribute** depend on the selected entity.
+    | Attribute | Description |
+    | --- | --- |
+    | **Date of Birth** | The customer's date of birth. This attribute can be used to identify customers based on their date of birth or age. |
+    | **KYC Status** | **KYC (Know Your Customer)** is the process of verifying a customer's identity. This attribute indicates the customer's current KYC verification status. |
+    | **FKYC Method** | **FKYC (Full KYC)** refers to the customer's full KYC verification. This attribute indicates the method through which the customer's FKYC was completed. |
+    | **FKYC Status** | Indicates the current status of the customer's **Full KYC (FKYC)** verification. |
+    | **Created On** | The date on which the customer's record was created in the system. |
+    | **Last Updated On** | The date on which the customer's record was most recently updated in the system. |
+  </Tab>
 
-### Add Criteria
+  <Tab title="Account">
+    <div className="flex justify-center my-6">
+      <img
+        src="/images/images/n6.2.png"
+        alt="Account attributes in Nudge User Base"
+        className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+      />
+    </div>
 
-Select **Add Criteria** to add additional conditions.
+    | Attribute | Description |
+    | --- | --- |
+    | **Status** | The current status of the account. |
+    | **Smart Tag** | The Smart Tag associated with the account. |
+    | **Statement Due Date** | The date on which the account statement is due. |
+    | **Created On** | The date on which the account was created. |
+    | **Last Updated On** | The date on which the account was most recently updated. |
+    | **Account Block Codes** | The block codes associated with the account. |
 
-Multiple criteria can be configured when the Nudge needs to target customers based on more than one condition.
+    Select the required attribute from the **Account** attribute dropdown and configure the corresponding condition. Select **Add Criteria** to add additional conditions to the user base.
+  </Tab>
 
----
+  <Tab title="Card">
+    <div className="flex justify-center my-6">
+      <img
+        src="/images/images/n6.3.png"
+        alt="Card attributes in Nudge User Base"
+        className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+      />
+    </div>
+    <div className="flex justify-center my-6">
+      <img
+        src="/images/images/n6.3.1.png"
+        alt="Additional Card attributes in Nudge User Base"
+        className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+      />
+    </div>
 
-## Customer
+    The available Card attributes are grouped by the type of information they represent.
 
-Select **Customer** when the user base needs to be defined using customer-level information.
+    <Accordion title="Card Status and Identification">
+      | Attribute | Description |
+      | --- | --- |
+      | **Status** | The current status of the card. |
+      | **Smart Tag** | The Smart Tag associated with the card. |
+      | **Card Type** | The type of card. |
+      | **Card Block Codes** | The block codes associated with the card. |
+    </Accordion>
 
-<div className="flex justify-center my-6">
-  <img
-    src="/images/images/n6.1.png"
-    alt="Customer attributes in Nudge User Base"
-    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
-  />
-</div>
+    <Accordion title="Card Lifecycle">
+      | Attribute | Description |
+      | --- | --- |
+      | **Card Expiry** | The expiry details of the card. |
+      | **Physically Issued** | The physical card issuance status. |
+      | **Virtually Issued** | The virtual card issuance status. |
+      | **Physical Card Activated** | The activation status of the physical card. |
+      | **Virtual Card Activated** | The activation status of the virtual card. |
+      | **Is Ever Activated** | The card's activation history. |
+    </Accordion>
 
-### Customer Attributes
+    <Accordion title="Card State">
+      | Attribute | Description |
+      | --- | --- |
+      | **Locked** | The locked status of the card. |
+      | **Blocked** | The blocked status of the card. |
+    </Accordion>
 
-The following attributes are available under **Customer**:
+    <Accordion title="Record Information">
+      | Attribute | Description |
+      | --- | --- |
+      | **Created On** | The date on which the card record was created. |
+      | **Last Updated On** | The date on which the card record was last updated in the system. |
+    </Accordion>
+  </Tab>
 
-| Attribute | Description |
-| --- | --- |
-| **Date of Birth** | The customer's date of birth. This attribute can be used to identify customers based on their date of birth or age. |
-| **KYC Status** | **KYC (Know Your Customer)** is the process of verifying a customer's identity. This attribute indicates the customer's current KYC verification status. |
-| **FKYC Method** | **FKYC (Full KYC)** refers to the customer's full KYC verification. This attribute indicates the method through which the customer's FKYC was completed. |
-| **FKYC Status** | Indicates the current status of the customer's **Full KYC (FKYC)** verification. |
-| **Created On** | The date on which the customer's record was created in the system. |
-| **Last Updated On** | The date on which the customer's record was most recently updated in the system. |
+  <Tab title="Card Control">
+    <div className="flex justify-center my-6">
+      <img
+        src="/images/images/n6.4.png"
+        alt="Card Control attributes in Nudge User Base"
+        className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+      />
+    </div>
 
----
+    The available attributes are grouped into **Domestic Controls** and **International Controls** based on the transaction context.
 
-## Account
+    <Accordion title="Domestic Controls">
+      | Attribute | Description |
+      | --- | --- |
+      | **Domestic Contact** | Transactions made using contact-based card payments within the domestic region. |
+      | **Domestic Contactless** | Transactions made using contactless card payments within the domestic region. |
+      | **Domestic Ecommerce** | Online purchases or payments made through ecommerce platforms within the domestic region. |
+      | **Domestic Magnetic** | Transactions made using the card's magnetic stripe within the domestic region. |
+      | **Domestic Moto** | Mail-order and telephone-order transactions where the card is not physically presented within the domestic region. |
+      | **Domestic Cash** | Cash transactions, such as cash withdrawals, within the domestic region. |
+    </Accordion>
 
-Select **Account** when the user base needs to be defined using account-level information.
+    <div className="flex justify-center my-6">
+      <img
+        src="/images/images/n6.4.1.png"
+        alt="International Card Control attributes in Nudge User Base"
+        className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+      />
+    </div>
 
-<div className="flex justify-center my-6">
-  <img
-    src="/images/images/n6.2.png"
-    alt="Account attributes in Nudge User Base"
-    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
-  />
-</div>
-
-### Account Attributes
-
-The following attributes are available under **Account**:
-
-| Attribute | Description |
-| --- | --- |
-| **Status** | The current status of the account. |
-| **Smart Tag** | The Smart Tag associated with the account. |
-| **Statement Due Date** | The date on which the account statement is due. |
-| **Created On** | The date on which the account was created. |
-| **Last Updated On** | The date on which the account was most recently updated. |
-| **Account Block Codes** | The block codes associated with the account. |
-
-### Add Account Criteria
-
-Select the required attribute from the **Account** attribute dropdown and configure the corresponding condition.
-
-Select **Add Criteria** to add additional conditions to the user base.
-
----
-
-## Card
-
-Select **Card** when the user base needs to be defined using attributes associated with a customer's card.
-
-<div className="flex justify-center my-6">
-  <img
-    src="/images/images/n6.3.png"
-    alt="Card attributes in Nudge User Base"
-    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
-  />
-</div>
-
-<div className="flex justify-center my-6">
-  <img
-    src="/images/images/n6.3.1.png"
-    alt="Additional Card attributes in Nudge User Base"
-    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
-  />
-</div>
-
-### Card Attributes
-
-The available Card attributes are grouped by the type of information they represent.
-
-#### Card Status and Identification
-
-| Attribute | Description |
-| --- | --- |
-| **Status** | The current status of the card. |
-| **Smart Tag** | The Smart Tag associated with the card. |
-| **Card Type** | The type of card. |
-| **Card Block Codes** | The block codes associated with the card. |
-
-#### Card Lifecycle
-
-| Attribute | Description |
-| --- | --- |
-| **Card Expiry** | The expiry details of the card. |
-| **Physically Issued** | The physical card issuance status. |
-| **Virtually Issued** | The virtual card issuance status. |
-| **Physical Card Activated** | The activation status of the physical card. |
-| **Virtual Card Activated** | The activation status of the virtual card. |
-| **Is Ever Activated** | The card's activation history. |
-
-#### Card State
-
-| Attribute | Description |
-| --- | --- |
-| **Locked** | The locked status of the card. |
-| **Blocked** | The blocked status of the card. |
-
-#### Record Information
-
-| Attribute | Description |
-| --- | --- |
-| **Created On** | The date on which the card record was created. |
-| **Last Updated On** | The date on which the card record was last updated in the system. |
-
----
-
-## Card Control
-
-Select **Card Control** when the user base needs to be defined using card-control attributes.
-
-<div className="flex justify-center my-6">
-  <img
-    src="/images/images/n6.4.png"
-    alt="Card Control attributes in Nudge User Base"
-    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
-  />
-</div>
-
-The available attributes are grouped into **Domestic Controls** and **International Controls** based on the transaction context.
-
-### Domestic Controls
-
-**Domestic Controls** relate to transaction types performed within the domestic region.
-
-| Attribute | Description |
-| --- | --- |
-| **Domestic Contact** | Transactions made using contact-based card payments within the domestic region. |
-| **Domestic Contactless** | Transactions made using contactless card payments within the domestic region. |
-| **Domestic Ecommerce** | Online purchases or payments made through ecommerce platforms within the domestic region. |
-| **Domestic Magnetic** | Transactions made using the card's magnetic stripe within the domestic region. |
-| **Domestic Moto** | Mail-order and telephone-order transactions where the card is not physically presented within the domestic region. |
-| **Domestic Cash** | Cash transactions, such as cash withdrawals, within the domestic region. |
-
-<div className="flex justify-center my-6">
-  <img
-    src="/images/images/n6.4.1.png"
-    alt="International Card Control attributes in Nudge User Base"
-    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
-  />
-</div>
-
-### International Controls
-
-**International Controls** relate to transaction types performed outside the domestic region.
-
-| Attribute | Description |
-| --- | --- |
-| **International Contact** | Transactions made using contact-based card payments outside the domestic region. |
-| **International Contactless** | Transactions made using contactless card payments outside the domestic region. |
-| **International Ecommerce** | Online purchases or payments made through ecommerce platforms outside the domestic region. |
-| **International Magnetic** | Transactions made using the card's magnetic stripe outside the domestic region. |
-| **International Moto** | Mail-order and telephone-order transactions where the card is not physically presented outside the domestic region. |
-| **International Cash** | Cash transactions, such as cash withdrawals, outside the domestic region. |
-
----
+    <Accordion title="International Controls">
+      | Attribute | Description |
+      | --- | --- |
+      | **International Contact** | Transactions made using contact-based card payments outside the domestic region. |
+      | **International Contactless** | Transactions made using contactless card payments outside the domestic region. |
+      | **International Ecommerce** | Online purchases or payments made through ecommerce platforms outside the domestic region. |
+      | **International Magnetic** | Transactions made using the card's magnetic stripe outside the domestic region. |
+      | **International Moto** | Mail-order and telephone-order transactions where the card is not physically presented outside the domestic region. |
+      | **International Cash** | Cash transactions, such as cash withdrawals, outside the domestic region. |
+    </Accordion>
+  </Tab>
+</Tabs>
 
 ## Additional User Base Controls
 
 After defining the user-base criteria, configure the additional options related to communication eligibility and duplicate accounts.
 
-### Override Do Not Communicate (DNC)
-
-Enable **Override Do Not Communicate (DNC)** to allow the Nudge to be sent to eligible customers who are part of the **Do Not Communicate (DNC)** list.
-
-### Allow Duplicate Accounts
-
-Enable **Allow Duplicate Accounts** when duplicate accounts should be included in the Nudge's user base.
-
-By default, duplicate accounts are blocked to prevent customers from receiving multiple communications.
-
-Enable this option only for **pre-approved campaigns** where duplicate accounts are intentionally required.
+<CardGroup cols={2}>
+  <Card title="Override Do Not Communicate (DNC)">
+    Enable to allow the Nudge to be sent to eligible customers who are part of the **Do Not Communicate (DNC)** list.
+  </Card>
+  <Card title="Allow Duplicate Accounts">
+    Enable when duplicate accounts should be included in the Nudge's user base. By default, duplicate accounts are blocked to prevent customers from receiving multiple communications. Enable this option only for **pre-approved campaigns** where duplicate accounts are intentionally required.
+  </Card>
+</CardGroup>
 
 <div className="flex justify-center my-6">
   <img
