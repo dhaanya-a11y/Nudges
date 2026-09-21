@@ -21,7 +21,7 @@ Hyperface supports the following Nudge Types:
     alt="Nudge Type selection"
     className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
   />
-</div>
+</div> 
 
 <Info>
 The selected **Nudge Type** determines the configuration flow available in the subsequent stages of Nudge creation.
