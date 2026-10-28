@@ -1,1 +1,60 @@
+```md
+---
+title: Interaction Limit
+description: Configure when a nudge can reappear after dismissal and set limits on user interactions.
+---
 
+## Overview
+
+The **Interaction Limit** step allows you to configure whether a nudge can reappear after a customer dismisses it and define the interaction threshold at which it stops appearing.
+
+This step includes two configuration options:
+
+- **Show Again After Dismissal** — Determines whether a dismissed nudge can be displayed again.
+- **Nudge Interaction Limit** — Defines the interaction threshold after which the nudge stops appearing.
+
+<div className="flex justify-center my-6">
+  <img
+    src="/images/images/nudge interscation.png"
+    alt="Interaction Limit configuration"
+    className="w-[700px] rounded-2xl border border-gray-200 shadow-lg"
+  />
+</div>
+
+## Show Again After Dismissal
+
+The **Show Again After Dismissal** setting determines whether a nudge can appear again after a customer dismisses it.
+
+The interface displays the following description:
+
+> Once dismissed, won't show again
+
+Select the appropriate option from the dropdown to configure this behaviour.
+
+## Nudge Interaction Limit
+
+The **Nudge Interaction Limit** section allows you to set a threshold for user interactions, after which the nudge stops appearing.
+
+### Configure the Interaction Limit
+
+Under **Nudge Interaction Limit**, select the required attribute from the **Attribute** dropdown.
+
+The available attributes shown in the interface are:
+
+| Attribute | Description |
+|---|---|
+| **Impression Count** | Represents the number of times the nudge has been displayed to the user. |
+| **CTR Count** | Represents the number of click-through interactions associated with the nudge. |
+
+Select the relevant attribute to configure the interaction limit.
+
+### Add More Conditions
+
+Select **Add more** to add another interaction-limit condition.
+
+Use the delete icon to remove a condition that is no longer required.
+
+## What's Next?
+
+After configuring the required interaction settings, select **Continue** to proceed to the **Communication** step.
+```
